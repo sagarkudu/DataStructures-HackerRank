@@ -1,0 +1,21 @@
+# Mars Exploration
+
+https://www.hackerrank.com/challenges/mars-exploration/problem
+
+// Complete the marsExploration function below.
+    static int marsExploration(String str) {
+        
+        int count = 0;
+        for(int i=0; i<str.length(); i+=3){ //dividing string into 3 parts.
+            
+            if(str.charAt(i) != 'S') //first character is equal to S
+                count++;
+                
+            if(str.charAt(i+1) != 'O') //second character is equal to O
+                count++;
+                
+            if(str.charAt(i+2) != 'S') //third character is equal to S
+                count++;
+        }
+        return count;
+    }
