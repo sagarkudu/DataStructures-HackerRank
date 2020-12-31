@@ -1,0 +1,33 @@
+# hackerrank-in-a-string
+
+https://www.hackerrank.com/challenges/hackerrank-in-a-string
+
+Solution 1:
+
+static String hackerrankInString(String s) {
+        
+        String str = "hackerrank";
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.matches(".*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*")) 
+                   return "YES";
+            else
+                return "NO";
+        }
+         return (count == str.length() ? "YES" : "NO");
+    }
+    
+ Solution 2: 
+ 
+  static String hackerrankInString(String s) {
+        
+        for (int i = 0; i < s.length(); i++) {
+            if (s.matches(".*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*")) 
+                   return "YES";
+            else
+                return "NO";
+            
+        }
+        return "NO";
+
+    }
