@@ -1,0 +1,14 @@
+# pangrams
+https://www.hackerrank.com/challenges/pangrams/problem
+
+ static String pangrams(String s) {
+    s=s.toLowerCase();
+    
+    String str  = "abcdefghijklmnopqrstuvwxyz";
+    
+    for(char c : str.toCharArray()){
+        if(!s.contains(c+""))
+            return "not pangram";
+    }
+    return "pangram";
+    }
